@@ -17,7 +17,7 @@
 
 body{
     font-family: sans-serif;
-    background: var(--bg);
+    background: var(--bg-dark);
     color: var(--text);
     text-align: center;
     justify-content: center;
@@ -32,22 +32,26 @@ button{
     
 }
 .Login{
-    background: var(--bg-dark);
+    background: var(--bg-light);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-direction: column;
-    border: 1px solid var(--border);
+    border: 1px solid var(--highlight);
     padding: 10px;
     width: 50%;
     margin: auto;
     height: 30vh;
     margin-bottom: 50px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+
 }
 input, select{
     background: var(--bg);
-    border: 1px var(--border);
+    border: 1px solid var(--highlight);
     width: 50%;
     height: 30px;
     justify-content: center;
@@ -56,6 +60,7 @@ input, select{
     border-radius: 5px;
     display: flex;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 .Login:hover{
     transform: scale(1.02);
@@ -68,16 +73,17 @@ transform: scale(1.02);
     background-color: var(--secondary);
 }
 .usuario{
-    background: var(--bg-dark);
+    background: var(--bg-light);
     border-radius: 10px;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    border: 1px solid var(--border);
+    border: 1px solid var(--highlight);
     padding: 10px;
     width: 50%;
     margin: auto;
     height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 #showUsers p{
     color: var(--text-muted);
@@ -89,4 +95,5 @@ transform: scale(1.02);
     margin: 0;
     margin-bottom: 5px;
     font-size: small;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
