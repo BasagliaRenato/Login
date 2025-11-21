@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Página de Login</h1>
+    <div class="Login">
+        
+    <input type="text" placeholder="Nome Sobrenome" id="nome">
+    <select name="Gênero" id="Genero">
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Outro</option>
+    </select>
+    <input type="date" max="2009-11-20" min="1900-01-01" id="data">
+    <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+    <h1>Usuários</h1>
+    <div class="usuario">
+        <button onclick="mostrar(cadastros)">Mostrar usuários</button>
+        <div class="boxUsuario">
+            <p id="showUsers"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
